@@ -1,4 +1,5 @@
 ---
+title: About
 ---
 
 ![](https://upload.wikimedia.org/wikipedia/commons/5/55/Four_Moose.jpg)
@@ -13,3 +14,7 @@ in a preordained sort of way. I still feel fortunate and grateful for the
 experience that I was given, and for the mentorship of my advisor [Angela
 Fuller](https://blogs.cornell.edu/fullerlab/), and the rest of my laboratory and
 friends there.
+
+I graduated from my Master's degree in Quantitative Ecology in 2018, and have
+since moved to Cleveland, OH, where I am now a data analyst at Progressive
+Insurance, working on the Staffing and Efficiency agenda in Claims.
