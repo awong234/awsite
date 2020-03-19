@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A minimal Hugo website"
+title = "Alec's website"
 theme = "hugo-xmin"
 googleAnalytics = ""
 disqusShortname = ""
@@ -28,9 +28,10 @@ footnotereturnlinkcontents = "↩"
     url = "/tags/"
     weight = 4
 [[menu.main]]
-    name = "Subscribe"
-    url = "/index.xml"
+    name = "Photography"
+    url = "/photography/"
+    weight = 5
 
 [params]
     description = "A website built through Hugo and blogdown."
-    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 -- 2019 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
+    footer = "Alec Wong | [500px](https://500px.com/alecwong) | [Github](https://github.com/awong234) | [Twitter](https://twitter.com/Awong234)"
