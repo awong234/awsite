@@ -1,7 +1,0 @@
-static/photographs/
-static/photographs/2018
-static/photographs/2018/07
-static/photographs/2018/07/Scotland
-static/photographs/2019
-static/photographs/2019/05
-static/photographs/2019/07
