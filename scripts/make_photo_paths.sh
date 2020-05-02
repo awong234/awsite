@@ -1,3 +1,3 @@
 #!/bin/bash
 
-find ../static/photographs -type d | awk -f ./make_photo_paths.awk
+ssh alecsalc@alecsalces.com 'find public_html/static/photographs -type d' | awk -f ./scripts/make_photo_paths.awk
