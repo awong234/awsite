@@ -3,17 +3,29 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 <body>
-	<img id="viewer" src="" width="800px"/>
-	<div id="info"> </div>
+	<div id="viewer" style="width: 50%; margin: auto;"></div>	
 <script>
-$(function() {
+// Get the files as pre-specified by bash script
 
-	var baseUrl = "/static/photographs/2019/07/";
-	var pictureIndex = 0;
-	var pictures = [];
+var baseUrl = [
+"/static/photographs",
+"/static/photographs/2018",
+"/static/photographs/2018/07",
+"/static/photographs/2018/07/Scotland",
+"/static/photographs/2019",
+"/static/photographs/2019/05",
+"/static/photographs/2019/07",
+]
 
-	function getFiles() {
-		$.ajax(baseUrl).success(function(data) {
+function getAndDisplayFiles() {
+	for (url in baseUrl) {
+		let path = baseUrl[url]
+		let path_split = path.split("/")
+		let year = path_split[3]
+		let month = path_split[4]
+		let subc = path_split[5]
+		$.ajax(path).success(function(data) {
+			console.log("This is folder " + path)
 			pictures = [];
 			$(data).find("a[href]").each(function() {
 				var href = $(this).attr('href');
@@ -22,31 +34,28 @@ $(function() {
 				}
 			});
 			console.log(pictures.length + " pictures loaded!");
-			changePicture(0);
+			// Now append each of these to the "Viewer" div.
+			if (pictures.length > 0) {
+				console.log("Appending: <h1>" + year + "</h1>")
+				$("#viewer").append("<h1>" + year + "</h1>")
+				if (month !== undefined) {
+					console.log("Appending: <h2>" + month + "</h2>")
+					$("#viewer").append("<h2>" + month + "</h2>")
+				}
+				if (subc !== undefined) {
+					console.log("Appending: <h3>" + subc + "</h3>")
+					$("#viewer").append("<h3>" + subc + "</h3>")
+				}
+				pictures.map( (link) => {
+					console.log("Appending: <img src='" + path + '/' + link + "'/>")
+					$("#viewer").append("<img src='" + path + '/' + link + "' style='width:100%;'/>")
+				})
+			}			
 		});
 	}
-
-	function changePicture(indexOffset) {
-		pictureIndex += indexOffset;
-		if (pictureIndex >= pictures.length) {
-			pictureIndex = 0;
-		} else if (pictureIndex < 0) {
-			pictureIndex = pictures.length - 1;
-		}
-		$('#viewer').attr('src', baseUrl + pictures[pictureIndex]);
-		$('#info').text((pictureIndex + 1) + "/" + pictures.length);
-	}
-
-	getFiles();
-	$(document).keydown(function(e){
-		var left = -1, right = 1;
-	    if (e.keyCode == 37) {
-	       changePicture(left); return false;
-	    } else if (e.keyCode == 39) {
-	    	changePicture(right); return false;
-	    }
-	});
-});
+	
+}
+getAndDisplayFiles();
 </script>
 </body>
 </html>
