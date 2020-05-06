@@ -3,6 +3,7 @@
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <link rel="stylesheet" href="/assets/green.css">
 <link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/myStyles.css">
 </head>
 <body>
 	<div id="viewer" style="width: 50%; margin: auto;"></div>
@@ -186,7 +187,7 @@ function getAndDisplayFiles() {
 				}
 				pictures.map( (link) => {
 					console.log("Appending: <img src='" + path + '/' + link + "'/>")
-					$("#viewer").append("<img src='" + path + '/' + link + "' style='width:100%;' loading = 'lazy'/>")
+					$("#viewer").append("<img src='" + path + '/' + link + "' class=photos loading = 'lazy'/>")
 				})
 			}
 		});
