@@ -183,7 +183,7 @@ function getAndDisplayFiles() {
 				}
 				pictures.map( (link) => {
 					console.log("Appending: <img src='" + path + '/' + link + "'/>")
-					$("#viewer").append("<img src='" + path + '/' + link + "' style='width:100%;'/>")
+					$("#viewer").append("<img src='" + path + '/' + link + "' style='width:100%;' loading = 'lazy'/>")
 				})
 			}
 		});
