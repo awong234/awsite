@@ -151,9 +151,10 @@ var baseUrl = [
 "/static/photographs/2012/12",
 ]
 
+baseUrl.sort().reverse()
 
 function getAndDisplayFiles() {
-	for (url in baseUrl.sort()) {
+	for (url in baseUrl) {
 		let path = baseUrl[url]
 		let path_split = path.split("/")
 		let year = path_split[3]
