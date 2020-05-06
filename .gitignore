@@ -2,3 +2,4 @@ public
 *.jpg
 .Rproj.user
 static
+themes/terminal
