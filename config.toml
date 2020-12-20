@@ -66,6 +66,18 @@ paginate = 5
   # do not include @
   creator = ""
   site = ""
+  
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Alec's Alces"
+    subtitle = ""
+    owner = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
 
 [[menu.main]]
   name = "About"
