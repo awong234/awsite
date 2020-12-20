@@ -1,0 +1,1 @@
+Note for me: This repo is for managing the high-level blogdown-driven R project, which exports the website in the public directory. The public directory has its own repository, which is hosted on the web server.
