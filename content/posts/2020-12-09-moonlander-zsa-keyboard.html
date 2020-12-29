@@ -1,0 +1,222 @@
+---
+title: Moonlander ZSA Ergonomic Keyboard -- Review
+author: Alec Wong
+cover: https://www.zsa.io/static/8567515c1ffbc03f83c7bfa2b29bd155/4ad1b/1-hero-white.png
+date: '2020-12-09'
+slug: moonlander-zsa-review
+categories: [equipment]
+tags: [moonlander, zsa, mechanical keyboards, ergonomics]
+---
+
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<div id="moonlander-zsa-review" class="section level1">
+<h1>Moonlander ZSA Review</h1>
+<p>I bought this thing in late October, a few days after I’d had some pain in my
+wrist at work. This thing comes direct from Taiwan (free shipping!), and the
+wait was rather agonizing, checking the tracking every 10 minutes or so. At
+$375, this is not a budget keyboard by any means, but I figured the health
+benefits avoiding wrist injury was worth the price tag. Reviews indicated that
+the build quality is extremely high, so I went for it.</p>
+<p>The TL;DR is that this is a forward-thinking, excellently-devised split
+keyboard, able to keep up with all of your configuration needs. The tenting and
+split design offers the advertised ergonomic benefits, but I find the
+ortholinear layout less appropriate for gaming. I’m still using my old keyboard
+for work until my confidence increases with the Moonlander. Replace the keycaps
+with sculpted keycaps ASAP.</p>
+<div id="typing-speed" class="section level2">
+<h2>Typing speed</h2>
+<p>As expected, typing speed <strong><em>tanked</em></strong> in the first week that I worked with this
+keyboard. The manufacturer ZSA provides a terrific app called Oryx that allows
+you to configure your layout, test your typing speed on text or code, and
+monitor the keystrokes live – this is what I used primarily to assess my typing
+speed.</p>
+<pre class="r"><code>datasets     = list.files(&#39;static/assets/data/&#39;)
+paths        = list.files(&#39;static/assets/data/&#39;, full.names = TRUE)
+dates        = substr(datasets, start = 1, stop = 10) %&gt;% as.Date()
+last_dataset = paths[which.max(dates)]
+typingData   = fread(last_dataset)
+
+background_color = rgb(31/255, 34/255, 42/255)
+
+typingData_long = typingData %&gt;% 
+  tidyr::pivot_longer(cols = c(&quot;Accuracy&quot;, &quot;WPM&quot;), names_to = &quot;Metric&quot;, values_to = &quot;Value&quot;)
+
+ggplot(typingData_long) + 
+  aes(x = Date, y = Value, color = Type) +
+  geom_point() + 
+  geom_smooth(se = FALSE, formula = y ~ x) + 
+  facet_wrap(~Metric, scales = &#39;free&#39;) + 
+  scale_y_continuous(breaks = scales::pretty_breaks(n = 10)) + 
+  theme_bw() + 
+  theme(
+    panel.background = element_rect(fill = background_color),
+    plot.background  = element_rect(fill = background_color),
+    strip.background = element_rect(fill = background_color),
+    strip.text = element_text(color = &#39;gray90&#39;),
+    legend.background = element_rect(fill = background_color),
+    legend.key = element_rect(fill = background_color),
+    text = element_text(color = &#39;gray90&#39;),
+    axis.text = element_text(color = &#39;gray90&#39;),
+    panel.grid = element_line(color = &#39;gray20&#39;)
+  )</code></pre>
+<pre><code>## `geom_smooth()` using method = &#39;loess&#39;</code></pre>
+<p><img src="/posts/2020-12-09-moonlander-zsa-keyboard_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>My typing speed dropped to as low as ~20 words per minute for code in the first
+few times typing on the Moonlander. This should be expected; the ortholinear,
+columnar layout takes time to get used to, and the location of symbols did not
+correspond to any existing muscle memory on QWERTY layouts.</p>
+<p>However, over time, my speed has improved; I’ve actually exceeded my typing
+speed on an ordinary layout (which was previously typically around 85 WPM)
+reaching as high as 114 WPM. This is certainly a welcome
+change.</p>
+<p>Typing code is going to be slower due to the symbols accessed, but familiarity
+with my layout and keeping a layout as intuitive as possible to existing muscle
+memory returned my speed to roughly 60 WPM. Accuracy is fairly constant, around
+96% for both types of typing (Oryx does not register data points for results &lt;
+95%).</p>
+</div>
+<div id="layouts" class="section level2">
+<h2>Layouts</h2>
+<p>Speaking of layouts, <a href="https://configure.ergodox-ez.com/moonlander/layouts/q9AGA/latest/0">my
+layout</a>
+changed drastically and often compared to the default Moonlander. The bit that
+gave me the most trouble was where to keep the symbols:</p>
+<ul>
+<li>Should I keep them in a dedicated layer?</li>
+<li>Put them on the left-hand (like the default layout has it), right-hand, or both sides?</li>
+<li>Which symbols should exist on the base layer?</li>
+</ul>
+<p>Ultimately, I decided that symbols should all mostly live in their own layer,
+but the muscle memory from an ordinary layout should not be forsaken unless
+there was a good speed, convenience, or ergonomic reason.</p>
+<p>I used the key where caps-lock normally goes to access the symbols layer, and
+moved all of the symbols from the number keys down to the home row (for the most
+part). This way, existing muscle memory needs not be reprogrammed too far.</p>
+<p>At this moment, I have 8 layers;</p>
+<ul>
+<li>Base</li>
+<li>Arrows (accessed from the semi-colon, like the base layer)</li>
+<li>Numpad</li>
+<li>Symbols</li>
+<li>Gaming</li>
+<li>Colors</li>
+<li>Control (media and more arrow keys)</li>
+<li>R/IDE</li>
+</ul>
+</div>
+<div id="ergonomics" class="section level2">
+<h2>Ergonomics</h2>
+<p>Perhaps it’s due to the unfamiliar layout, but I do continue to feel some strain
+on my hand tendons &amp; muscles. I may go so far as to say that the ortholinear
+layout does not achieve its ergonomic purpose, and causes some strain compared
+to the staggered key layout. At this moment, tension in my hands is higher, and
+some pain flickers in my right-hand-side ring finger tendons. I wonder how much
+of this is due to the combination of the pinky button activating the “Arrows”
+layer for quick arrow navigation while typing.</p>
+<p>I appreciate the tenting and the split layout, and I do think this does
+alleviate discomfort. Normal keyboards feel somewhat cramped in comparison. I
+find myself typing in the recommended way, arms at a 90° angle, and hands
+floating above the keys instead of resting on the wrist-wrest.</p>
+<p>The keycaps are the same size as my old board, but keys feel <em>smaller</em> on a
+staggered layout keyboard. I guess this implies that I feel like my fingers are
+traveling farther on average to hit keys with the Moonlander. I think that there
+is some merit to this; the staggered layout has keys oriented in an <em>almost</em>
+hexagonal arrangement; while some keys are farther to reach on a standard
+keyboard (“B” is one instance) I think for the most part the ortholinear layout
+incurs more travel distance as the grid arrangement is less space efficient than
+the hexagonal arrangement.</p>
+<p>Compare the distance between “F” and “6”; on a standard layout this is about 4.5
+centimeters. On the ortholinear layout, it is 5cm to the key to the
+right of “5”. This is a difference of half a centimeter; this sounds
+insignificant but it is 11% farther to travel!</p>
+<p>The ortholinear layout also requires some more contortion in certain contexts.
+For example; take the position of the letter “F”: on an ordinary staggered
+layout, my finger can comfortably press R, T, G, V, C, and B without adjusting
+the rest of my left hand. On the ortholinear layout, I lose access to the letter
+“C”; I must use a contortion to hit the letter with my index finger that
+disrupts the position of my other fingers.</p>
+<p>One may say that I should instead learn to press “C” with my middle finger;
+perhaps this is proper, but I have developed my typing style with an underlying
+principle of mitigating repositioning of fingers; I feel like it is most
+efficient to <em>not</em> have to move one’s hands too much when touch-typing. Pressing
+the center of the “C” key using the middle finger on a standard layout requires
+lifting the index finger out of the way; otherwise the middle finger intersects
+the index. Better to use the index to press “C”, as it requires less
+readjustment, in my opinion.</p>
+<p>This is about the only concern for normal typing, but the grid vs. hexagonal
+arrangement has a greater bearing in gaming.</p>
+</div>
+<div id="gaming" class="section level2">
+<h2>Gaming</h2>
+<p>Lots of buttons are available by the left hand between the additional row on the
+bottom and the thumb-cluster keys. This is certainly a plus, although I find the
+accuracy of the thumb-cluster keys to be lower in general, so they are reserved
+for less critical actions, usually reserved by keys “B”, “N”, and “M”. This is
+a <em>very</em> nice improvement, not having to reach all the way over to the “M” key
+with the left hand, which is often used to open up a map.</p>
+<p>The major concern about the grid layout for gaming is due to what was mentioned
+in the previous section; there is more repositioning that needs to be done due
+to the grid arrangement.</p>
+<p>Take the common gaming situation where digits 1-4 access certain inventory
+slots, and WASD are for movement. On a standard keyboard, while “W” is being
+held by the middle finger (you’re in the process of moving your character
+forward), the digits “2” and “3” are accessible to be pressed by the ring and
+index fingers respectively, because they are staggered up and to the left and
+right of “W”. In fact, it’s not difficult to press all three simultaneously.</p>
+<p>With the columnar layout, having “W” pressed by the middle finger results in
+much greater contortion to access “2” in particular. “3” is still accessible,
+but it’s much too far high now due to the vertical shifting of the layout. Try
+to press all three simultaneously; it’s not really easy to do without hitting
+other keys by mistake, and not without repositioning the middle-finger on “W”.
+Add left-shift for sprinting, and you now can’t really press “2” at all.</p>
+<p>“X” is the same way; while “W” is held down, “X” can be easily pressed using the
+index finger with a staggered layout, but more movement of the hand is required
+with the columnar layout; the hand needs to rotate nearly 45°.</p>
+<p>Given that equipment swaps typically need to be quick in response to changing
+circumstances, I would trade the extra thumb buttons and bottom row for the
+easier-to-access “2” and “X” buttons of the staggered layout. It <em>is</em> nicer
+having WASD in a grid, however.</p>
+<p>I haven’t experimented with remapping everything to the right one (W to E, A to
+S, D to F, etc.); I could see this fixing the distance traveled to hit “3”, but
+I don’t see it fixing the “2” and “X” issues.</p>
+<p>I moved shift to where CAPS was, and left-control to where shift normally is.
+This results in a more neutral position for the hands, which is admittedly nice.
+Space is the key below “V”.</p>
+</div>
+<div id="programming" class="section level2">
+<h2>Programming</h2>
+<p>At this time, despite the multitude of layers and configurations, I still feel
+more productive on a full layout. Why? I just feel like having each symbol
+mapped to one button is more efficient than multiple layers per key. Call me
+simple, but it’s faster (fewer key strokes) and it’s an easier mental model.
+Perhaps I’ll feel differently in a few months, when I’ve mastered this layout.</p>
+</div>
+<div id="build" class="section level2">
+<h2>Build</h2>
+<p>I think the quality of the build is fantastic. The lighting, materials,
+software, and everything else are top-tier.</p>
+<p>I replaced the original keycaps with HyperX sculpted keycaps (the pudding
+variety); I was pressing wrong keys (particularly with the numeric keys) way too
+often due to the lack of vertical differentiation between farther keys. Travel
+is <em>far</em> in some cases; take “5”: the distance on a normal keyboard replicated
+on the ortholinear layout brings me to the lower right corner of “4”. An
+additional few millimeters of travel are required to hit the “5” key, making it
+all the more important to have some vertical profile to avoid hitting “T” by
+accident. Sculpted keys made a tremendous difference in my quality of life using
+this board, I highly recommend swapping them out.</p>
+<p>One gripe I have is the lack of grip; when the keyboard is in a flat position,
+the underbody grips contact the surface and prevent the device from slipping.
+When the keyboard is in the tented position, however, the grips no longer
+contact the surface and the keyboard slides around way too much. I fixed this
+with a washcloth underneath the left-hand component, but there should be
+friction contacts on the wrist-rest and the thumb-cluster to avoid this sliding
+problem.</p>
+<p>Last, the wrist-rests are somewhat rattly when weight is shifted between the
+left and right side of the rests. Most of the time this isn’t an issue because
+my hands are floating above the keys instead of on the rest. This will be less
+of a concern going forward, as I’ve adopted the extra comfortable HyperX
+gel-wrist rest.</p>
+</div>
+</div>
