@@ -39,6 +39,7 @@ this point, does anyone really write HTML anymore? This website uses:
 - Server running PHP 7 and Apache2.
 
 
+
 ## Statistics & Machine Learning
 
 Applications of spatial data in particular has always interested me; kriging,
