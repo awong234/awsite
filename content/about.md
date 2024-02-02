@@ -29,6 +29,16 @@ Insurance, working on the Staffing and Efficiency agenda in Claims.
 
 # Professional Interests
 
+I am interested in websites and how they're put together. I never did the whole
+Myspace thing so I feel like I got a very late start into writing HTML. And at
+this point, does anyone really write HTML anymore? This website uses:
+
+- `hugo` with the [terminal](https://github.com/panr/hugo-theme-terminal) theme to generate websites from markdown.
+- Some `PHP` from [novaGallery](https://novagallery.org/).
+- A teensy bit of R Markdown compiled locally to markdown.
+- Server running PHP 7 and Apache2.
+
+
 ## Statistics & Machine Learning
 
 Applications of spatial data in particular has always interested me; kriging,
@@ -46,7 +56,6 @@ I'd like to learn more about:
 
 - Time series modeling
 - Neural networks
-
 
 ## Programming
 
