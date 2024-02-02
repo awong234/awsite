@@ -23,3 +23,8 @@ theme = 'terminal'
     pre = "categories"
     url = "/categories/"
     weight = 3
+  [[menu.main]]
+    name = "Photography"
+    pre = "photography"
+    url = "/photography/"
+    weight = 4
