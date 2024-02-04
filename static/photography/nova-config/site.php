@@ -18,7 +18,7 @@
   "imageSizeThumb": "400x400",
   "imageQuality": 89,
   "sortAlbums": "newest",
-  "sortImages": "newest",
+  "sortImages": "oldest",
   "fileListMaxCacheAge": 60,
   "pagePassword": ""
 }
