@@ -1,4 +1,4 @@
-resources
-public
-assets
+./resources
+./public
+./assets
 .hugo_build.lock
