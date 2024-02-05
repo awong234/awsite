@@ -24,3 +24,4 @@
       <?php endif; ?>
      </div>
     </header>
+    <div><a href="/">Back to blog</a></div>
