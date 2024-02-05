@@ -21,7 +21,7 @@ class Image {
   private static $height = false;
 
   private static function initialize($album, $image, $size = false, $cache = true){
-    // set path & name vars    
+    // set path & name vars
     self::$filePath = IMAGES_DIR.'/'.$album;
     self::$original = self::$filePath.'/'.$image;
     self::$cache = $cache;
@@ -48,7 +48,7 @@ class Image {
    * method to get image url based on size
    * @param string $album - name of the album
    * @param string $image - file name of image
-   * @param numeric $width - optional resize width 
+   * @param numeric $width - optional resize width
    * @param numeric $height - optional resize height
    *
    * @return string URL - url of (resized) image
@@ -69,7 +69,7 @@ class Image {
       $album = rawurlencode($album);
     }
 
-    
+
 
     // split image name if is in sub dir because contains sub dirs
     if(strpos($image, '/')){
@@ -80,9 +80,10 @@ class Image {
       }
     }
 
-    $url = IMAGES_URL.'/'.$album.'/cache/';
+    $url = IMAGES_URL.'/'.$album.'/';
 
     if($size){
+      $url = IMAGES_URL.'/'.$album.'/cache/';
       $url .= $size.'/';
     }
 
@@ -113,7 +114,7 @@ class Image {
    * method to get (resized) image
    * check if image already exists else create image
    * this method uses GImage from José Luis Quintana <https://git.io/joseluisq>
-   * 
+   *
    * @param string $album - album name
    * @param string $image - image file name
    * @param string $size (optional) - size
@@ -126,9 +127,9 @@ class Image {
     // check of original exisits
     if(!file_exists(self::$original)){
       self::notFound($hide404image);
-      exit;  
+      exit;
       }
-        
+
     // if no size, stream original file
     if(!$size){
       $img = new GImage\Image();
@@ -154,14 +155,14 @@ class Image {
     $img = new GImage\Image();
     $img  ->load(self::$original)
           ->setQuality(IMAGES_QUALITY);
-    
+
 
     if(self::$width && !self::$height){
       // resize to width
       $img->resizeToWidth(self::$width);
     } elseif (!self::$width && self::$height) {
       // resize to height
-      $img->resizeToHeight(self::$height);      
+      $img->resizeToHeight(self::$height);
     } elseif (self::$width && self::$height) {
       // resize both with cover/cropCenter
       $img->centerCrop(self::$width, self::$height);
@@ -179,7 +180,7 @@ class Image {
           ->save(self::$cacheFile);
 
   }
-  
+
   public static function writeCache($album, $image, $size){
     self::initialize($album, $image, $size);
 
@@ -208,7 +209,7 @@ class Image {
       $img->resizeToWidth(self::$width);
     } elseif (!self::$width && self::$height) {
       // resize to height
-      $img->resizeToHeight(self::$height);      
+      $img->resizeToHeight(self::$height);
     } elseif (self::$width && self::$height) {
       // resize both with cover/cropCenter
       $img->centerCrop(self::$width, self::$height);
@@ -241,7 +242,7 @@ class Image {
         mkdir(self::$cacheDirRoot, 0777, true);
       }
     }
-    
+
 
     $text = new GImage\Text('404 / Image not found');
     $text
@@ -273,7 +274,7 @@ class Image {
               ->save($cacheFile);
     } else {
       $canvas->output();
-    }       
+    }
     exit;
   }
 

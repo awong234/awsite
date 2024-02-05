@@ -1,4 +1,4 @@
-    <?php 
+    <?php
       $gallery = Page::data('gallery');
       $album = Page::data('album');
       $order = Page::data('order');
@@ -9,7 +9,7 @@
         <!-- albums -->
         <?php if($gallery->hasAlbums()): ?>
         <div class="row px-2 mt-4">
-          <?php foreach($gallery->albums($order) as $element => $modDate): 
+          <?php foreach($gallery->albums($order) as $element => $modDate):
                 $elementPath = $album ? $album.'/'.$element : $element;
           ?>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 element">
@@ -27,7 +27,7 @@
         <div class="row gallery px-2 mt-4">
           <?php foreach($gallery->images($order) as $element => $modDate): ?>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 element">
-              <a href="<?php echo Image::url($album, $element, Site::config('imageSizeBig')); ?>">
+              <a href="<?php echo Image::url($album, $element); ?>">
                 <img src="<?php echo Image::url($album, $element, Site::config('imageSizeThumb')); ?>" loading="lazy" class="rounded"><br>
               </a>
             </div>
