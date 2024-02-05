@@ -43,7 +43,12 @@ $parentPage = $gallery->parentAlbum($album);
 if($parentPage){
   $parentPage = 'album/'.$parentPage;
 }
-
+if(file_exists(IMAGES_DIR.'/'.$album.'/description.html')){
+  $description = file_get_contents(IMAGES_DIR.'/'.$album.'/description.html');
+} else {
+  $description = '';
+}
+Page::addData('description', $description);
 Page::addData('gallery', $gallery);
 Page::addData('order', $order);
 Page::addData('album', $album);

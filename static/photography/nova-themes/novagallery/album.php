@@ -1,4 +1,4 @@
-    <?php 
+    <?php
       $gallery = Page::data('gallery');
       $album = Page::data('album');
       $order = Page::data('order');
@@ -9,10 +9,13 @@
         <div class="col-12 mb-4"><a href="<?php echo Site::url().'/'.Page::data('parentPage'); ?>" class="text-muted link-back">&laquo; <?php L::p('Back'); ?></a></div>
       <?php endif; ?>
       <div class="container">
+        <?php if(!empty(Page::data('description'))): ?>
+          <?php echo Page::data('description');?>
+        <?php endif; ?>
         <!-- albums -->
         <?php if($gallery->hasAlbums()): ?>
         <div class="row px-2 mt-4">
-          <?php foreach($gallery->albums($order) as $element => $modDate): 
+          <?php foreach($gallery->albums($order) as $element => $modDate):
                 $elementPath = $album ? $album.'/'.$element : $element;
           ?>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-5 element">
