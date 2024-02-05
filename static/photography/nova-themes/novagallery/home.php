@@ -5,6 +5,7 @@
     ?>
     <content class="row mt-0 mt-md-5">
       <div class="col-12 mb-1"><h1><?php echo Page::title(); ?></h1></div>
+      <div class="col-md-3"><a href="/">Back to Home</a></div>
       <div class="container">
         <!-- albums -->
         <?php if($gallery->hasAlbums()): ?>
