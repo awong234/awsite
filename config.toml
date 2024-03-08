@@ -28,3 +28,6 @@ theme = 'terminal'
     pre = "photography"
     url = "/photography/"
     weight = 4
+ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
+[markup.goldmark.renderer]
+  unsafe= true
