@@ -16,11 +16,12 @@ domain name around 2015, while I was studying the New York Adirondack moose
 population during my Master’s program at Cornell; I never got around to it but
 finally did so January 2020 (yay!).
 
-The genus Alces is an anagram for my own name, and it felt almost too fitting in
-a preordained sort of way. I still feel fortunate and grateful for the
-experience that I was given, and for the mentorship of my advisors [Angela
+The genus Alces is close to an anagram for my own name, and it felt almost too
+fitting in a preordained sort of way. I still feel fortunate and grateful for
+the experience that I was given, and for the mentorship of my advisors [Angela
 Fuller](https://www.usgs.gov/staff-profiles/angela-fuller) (USGS), [Andy
-Royle](https://www.usgs.gov/staff-profiles/andy-royle) (USGS), [Jeremy Hurst](https://www.researchgate.net/scientific-contributions/Jeremy-E-Hurst-2209388610)
+Royle](https://www.usgs.gov/staff-profiles/andy-royle) (USGS), [Jeremy
+Hurst](https://www.researchgate.net/scientific-contributions/Jeremy-E-Hurst-2209388610)
 (NYDEC), and the rest of my laboratory and friends there.
 
 I graduated from my Master’s degree in Quantitative Ecology in 2018, and have
