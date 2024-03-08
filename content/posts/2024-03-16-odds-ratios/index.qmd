@@ -123,9 +123,12 @@ mean(df$y[df$group == 2])
 
 Nothing magic going on here.
 
-The values for the intercept `r p_group1 |> round(2)` and the beta coefficient for
-`group==2` `r p_group2 |> round(2)` correspond roughly to our true group probabilities
-which we fixed at the beginning of the simulation to `r p_success[1]` and
+The probability values implied by the intercept and the beta coefficient for `group==2`,
+`r p_group1 |> round(2)` and `r p_group2 |> round(2)`, respectively
+correspond roughly to our true group probabilities which we fixed at the
+beginning of the simulation to
+`r p_success[1]`
+and
 `r p_success[2]` for groups 1 and 2, respectively.
 
 Our model would suggest that the difference is not significant; while we know

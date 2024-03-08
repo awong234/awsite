@@ -164,9 +164,12 @@ mean(df$y[df$group == 2])
 
 Nothing magic going on here.
 
-The values for the intercept 0.21 and the beta coefficient for
-`group==2` 0.23 correspond roughly to our true group probabilities
-which we fixed at the beginning of the simulation to 0.2 and
+The probability values implied by the intercept and the beta coefficient for `group==2`,
+0.21 and 0.23, respectively
+correspond roughly to our true group probabilities which we fixed at the
+beginning of the simulation to
+0.2
+and
 0.22 for groups 1 and 2, respectively.
 
 Our model would suggest that the difference is not significant; while we know
@@ -539,4 +542,4 @@ system('quarto --version', intern = TRUE)
 Sys.time()
 ```
 
-    [1] "2024-03-07 21:24:59 EST"
+    [1] "2024-03-08 09:09:34 EST"
