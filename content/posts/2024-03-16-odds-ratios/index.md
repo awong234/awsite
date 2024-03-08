@@ -213,23 +213,23 @@ odds_group2
     [1] 0.3070866
 
 Now, let's remember that an odds number \< 1 means that you're more likely to
-fail, and an odds number \> 1 means you're more likely to succeed than fail.
-**The odds ratio is the ratio of the probability of success to the probability
-of failure.**
+fail than succeed, and an odds number \> 1 means you're more likely to succeed
+than fail. **An odds is the ratio of the probability of success to the
+probability of failure.**
 
 Here we see that the odds of winning when sitting in group 1 is 0.26,
 and the odds of winning when sitting in group 2 is 0.31. So
-in both cases we're more likely to fail, but we're just slightly more likely to
-succeed with group 2.
+in both cases we're more likely to fail than win, but we're just slightly more
+likely to succeed with group 2.
 
 In other words, when `group == 1`, you are roughly
 3.83x
-as likely to fail, and when `group == 2`, you are roughly
+as likely to fail than win, and when `group == 2`, you are roughly
 3.26x
-as likely to fail.
+as likely to fail than win.
 
-Using odds ratios, we can get a new quantity by exponentiating the `beta_group2`
-parameter directly:
+Using the odds formulation, we can get a new quantity by exponentiating the
+`beta_group2` parameter directly:
 
 ``` r
 exp(beta_group2)
@@ -238,7 +238,7 @@ exp(beta_group2)
     [1] 1.175197
 
 This is the relative increase/decrease of the odds when you sit in group 2 over
-group 1. To see why this is:
+group 1 -- the *odds ratio*. To see why this is:
 
 ``` r
 # Log of odds when group == 1
@@ -292,7 +292,7 @@ probability of success:
 ``` r
 change_odds = function(p, odds_ratio) {
     odds = p / (1-p)
-    # Increase odds 50%
+    # Multiply odds by odds_ratio to get new odds
     new_odds = odds * odds_ratio
     # Calculate new p
     new_p = plogis(log(new_odds))
@@ -539,4 +539,4 @@ system('quarto --version', intern = TRUE)
 Sys.time()
 ```
 
-    [1] "2024-03-07 20:58:07 EST"
+    [1] "2024-03-07 21:24:59 EST"
