@@ -197,8 +197,7 @@ $$
 \frac{p(x)}{1-p(x)} = \exp(\beta_0 + \beta_1 x)
 $$
 
-You can get odds ratio easily by just exponentiating the estimated coefficient
-for $\beta_1$.
+We can compute the odds for the outcome for each group like so:
 
 ``` r
 # Unname to get rid of names on the vectors
@@ -542,4 +541,4 @@ system('quarto --version', intern = TRUE)
 Sys.time()
 ```
 
-    [1] "2024-03-08 09:09:34 EST"
+    [1] "2024-03-09 10:10:35 EST"
