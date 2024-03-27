@@ -14,6 +14,11 @@ theme = 'terminal'
     url = "/About/"
     weight = 1
   [[menu.main]]
+    name = "Links"
+    pre = "lnk"
+    url = "/links/"
+    weight = 5
+  [[menu.main]]
     name = "Tags"
     pre = "tag"
     url = "/tags/"
