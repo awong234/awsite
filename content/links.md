@@ -10,3 +10,7 @@
 # Health
 
 - ["Body Electric", Manoush Zomorodi 2023](https://www.npr.org/series/1199526213/body-electric)
+
+# Other
+
+- ["Towards Accountable Capitalism: Remaking Corporate Law Through Stakeholder Governance", Lenore Palladino and Kristina Karlsson, Roosevelt Institute, on Monday, February 11, 2019](https://corpgov.law.harvard.edu/2019/02/11/towards-accountable-capitalism-remaking-corporate-law-through-stakeholder-governance/)
