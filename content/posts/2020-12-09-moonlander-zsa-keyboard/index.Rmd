@@ -1,7 +1,7 @@
 ---
 title: Moonlander ZSA Ergonomic Keyboard -- Review
 author: Alec Wong
-cover: https://res.cloudinary.com/zsa-technology/image/upload/f_auto/q_auto/c_scale,w_2293/v1/zsa-io-refactor-prod/1-hero-white.png?_a=BATCr5AA0
+cover: moonlander.jpg
 date: '2020-12-09'
 categories: [equipment]
 tags: [moonlander, zsa, mechanical keyboards, ergonomics]
