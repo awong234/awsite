@@ -2,7 +2,6 @@
 title: "My Opinion of AI"
 author: Alec Wong
 cover: monkeys.png
-draft: true
 date: '2024-08-04'
 categories: [life]
 tags: [musings, technology]
@@ -31,7 +30,7 @@ have the right social structures to integrate well with generative tech. Much of
 my opposition comes from the severing of epistemological heuristics we've relied
 on in society, and the need for new ones. Other opposition comes from concerns
 of labor and art. Ultimately my judgement is that the benefits of generative
-tech do not outweight the drawbacks.
+tech do not outweigh the drawbacks.
 
 ## Knowing things
 
@@ -65,16 +64,16 @@ supposed to be an expert in your field, how many others are there who can judge
 this? In either circumstance, the esteem that knowledge-bearers once held is
 eroded and hidden among noise, their legitimacy decimated.
 
-Video generation has gotten to the point where historical document (which can be
-of poor quality) is now questionable. Before generative technology was a thing
-[this was posted](https://www.reddit.com/r/Damnthatsinteresting/comments/omx53b/colourised_footage_of_england_in_1901_everyone/).
-It shows a gaggle of children ogling a newfangled thing called a camera, as some
-passersby obliviously go about their day. It has the same sort of aimlessness
-that generative videos often produce, and in viewing a single frame for too long
-one might begin to identify false positives of generative hallucination due
-to artifacts from the overly compressed format and limitations of the clearly
-old video technology. If you didn't know that this pre-dated generative tech,
-how certain would you be that this was a historical document?
+Video generation has gotten to the point where historical document is now
+questionable. Before generative technology was a thing [this was
+posted](https://www.reddit.com/r/Damnthatsinteresting/comments/omx53b/colourised_footage_of_england_in_1901_everyone/)
+to Reddit. It shows a gaggle of children ogling a newfangled thing called a
+camera, as some passersby obliviously go about their day. It has the same sort
+of aimlessness that generative videos often produce, and in viewing a single
+frame for too long one might begin to identify false positives of generative
+hallucination due to artifacts from the overly compressed format and limitations
+of the clearly old video technology. If you didn't know that this pre-dated
+generative tech, how certain would you be that this was a historical document?
 
 **I believe a trend of anti-intellectualism and mistrust in institutions of
 knowledge will accelerate with generative technologies.**
@@ -94,11 +93,17 @@ students to become accustomed to using it now? You might say, the calculator is
 the same idea and you use a calculator at work, don't you?
 
 I say, we've missed the whole point of education. School and universities should
-never have become a tool for businesses to receive trained labor for free. The
-point of a higher-education degree should not be a conversion to future profits.
-The classic joke is underwater basket-weaving, but there was a purpose to
-liberal arts education in the past and it was not about making money or your
-future prospects for the type of servitude you will submit to businesses!
+never have become a hand-out for businesses to receive trained labor for free.
+The point of a higher-education degree should not be a conversion to future
+profits. The classic joke is underwater basket-weaving, but in my view the
+purpose of higher education should not about making money or your future
+prospects for the type of servitude you will submit to businesses! It should be
+to learn, for learning's sake. If you want to learn underwater basket-weaving,
+then you should have that opportunity. If businesses want trained labor they
+should pay for it, either by funding your education in a specific field, funding
+education in general, or doing their own training. There is no culture of
+teaching in corporations, all knowledge is expected to be had before you walk in
+the door (I am too young to know if there ever was).
 
 The act of learning is a foundationally human activity, and a technology that
 reduces the need for this reduces our humanity and potential. Yes I was allowed
@@ -111,20 +116,20 @@ how it works because I was taught how to do it without one.
 
 But I'm not sure that lower education students will, if they conceive of
 generative tech as an all-knowing oracle that they can use to submit math
-problems to (you know they're doing it). From the perspective of a
+problems to (and you know they're doing it). From the perspective of a
 lower-education student who can apparently get all answers to any question
 without effort, and who does not have the discernment to distinguish output
 quality -- why bother learning anything? I would hope that the innate curiosity
 wins out but now that we've converted schools to capitalist training programs
-there is zero incentive to try hard if there won't be any value left over for
-you at the end.
+there is zero incentive to try hard especially if there won't be any value
+returned to you at the end.
 
 ## Working on things
 
 <img src=./babylon.jpg width='40%' class='shadow' title="Then the angel carried me away in the Spirit into a wilderness. There I saw a woman sitting on a scarlet beast that was covered with blasphemous names and had seven heads and ten horns. The woman was dressed in purple and scarlet, and was glittering with gold, precious stones and pearls. She held a golden cup in her hand, filled with abominable things and the filth of her adulteries. The name written on her forehead was a mystery: babylon the great the mother of prostitutes and of the abominations of the earth. I saw that the woman was drunk with the blood of God’s holy people, the blood of those who bore testimony to Jesus.">
 
 I'm no economist and poorly read in these areas so obviously take whatever I say
-with appropriate scepticism.
+with appropriate skepticism.
 
 From the perspective of the ownership class, the most efficient organization of
 production is the one which minimizes the cost of labor -- or perhaps eliminates
@@ -147,15 +152,15 @@ they pay you more when there is such risk involved? The very existence of the
 technology excuses erosion of the value returned to the laborer.
 
 The common rebuttal is that the world did not end from efficiencies achieved in
-the past, but rather progress opened up other opportunities for labor to
+the past, but rather innovation opened up other opportunities for labor to
 retrieve value. Instead of toiling in fields, labor moved to work in factories;
 instead of factories, labor moved to work in offices.
 
-I state that the difference now is that the efficiencies sought previously
-allowed us to transition from using our bodies for labor to using our minds,
-different applications of our human adaptations to produce value for others. But
-the efficiencies sought by adopters of generative technologies seek to erase
-even the use of our minds for labor. And not only labor, but art.
+The efficiencies and innovations sought previously allowed us to transition from
+using our bodies for labor to using our minds, different applications of our
+human adaptations to produce value for others. But I state that the difference
+now is that the efficiencies sought by adopters of generative technologies seek
+to erase even the use of our minds for labor. And not only labor, but art.
 
 There are a few things that we cherish as a higher-order intelligence on this
 planet (or ought to). A record of historical tradition, and dissemination of
