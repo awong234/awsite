@@ -22,7 +22,8 @@ the experience that I was given, and for the mentorship of my advisors [Angela
 Fuller](https://www.usgs.gov/staff-profiles/angela-fuller) (USGS), [Andy
 Royle](https://www.usgs.gov/staff-profiles/andy-royle) (USGS), [Jeremy
 Hurst](https://www.researchgate.net/scientific-contributions/Jeremy-E-Hurst-2209388610)
-(NYDEC), and the rest of my laboratory and friends there.
+(NYDEC), and the rest of my laboratory and friends there. You can read my thesis
+[here](https://drive.google.com/file/d/18yUIGAyi5ypOhyEOd3BlsLt-20M1R2LC/view).
 
 I graduated from my Master’s degree in Quantitative Ecology in 2018, and have
 since moved to Cleveland, OH, where I am now a data analyst at Progressive
@@ -35,11 +36,9 @@ Myspace thing so I feel like I got a very late start into writing HTML. And at
 this point, does anyone really write *just* HTML anymore? This website uses:
 
 - `hugo` with the [terminal](https://github.com/panr/hugo-theme-terminal) theme to generate websites from markdown.
-- Some `PHP` from [novaGallery](https://novagallery.org/).
+- Some `PHP` from [novaGallery](https://novagallery.org/) for the photography subpage.
 - A teensy bit of R Markdown compiled locally to markdown.
 - Server running PHP 7 and Apache2.
-
-
 
 ## Statistics & Machine Learning
 
@@ -64,7 +63,10 @@ I'd like to learn more about:
 I am extremely familiar with R, comfortable in Python. I do some bash scripting
 and operating in linux environments at work and home.
 
-On github, I have contributed bug-fixes to the R packages `boxr`, `import`, `keyring`, and `emphatic`
+On github, I have contributed bug-fixes to the R packages `boxr`, `import`,
+`keyring`, and `emphatic`. I have also contributed a minor PR to the
+`novaGallery` PHP framework, which I use to power
+[`alecsalces.com/photography`](alecsalces.com/photography).
 
 ## Teaching & Presentations
 
@@ -73,7 +75,8 @@ thread in my career. I have always identified as a scientist, and whether I end
 up back in science or remain in business, I will always value the scientific
 culture of sharing in discovery.
 
-- 2019 [“Project Organization: Head-Ache to GNU Make” – Cleveland R User Group](https://www.youtube.com/watch?v=dCkHqzotzsQ)
-- 2020 [“Sarcasm: Practicing programming techniques via an R package” – satRday Columbus](https://www.youtube.com/watch?v=_ulDpEcjZEA)
-- 2021 [“You’re a Parselmouth, Harry! Speaking python inside of R workflows” – satRday Columbus, Cleveland R User Group](https://www.youtube.com/watch?v=rAvPJzCKCCg)
+- 2019 ["Project Organization: Head-Ache to GNU Make" – Cleveland R User Group](https://www.youtube.com/watch?v=dCkHqzotzsQ)
+- 2020 ["Sarcasm: Practicing programming techniques via an R package" – satRday Columbus](https://www.youtube.com/watch?v=_ulDpEcjZEA)
+- 2021 ["You’re a Parselmouth, Harry! Speaking python inside of R workflows" – satRday Columbus, Cleveland R User Group](https://www.youtube.com/watch?v=rAvPJzCKCCg)
 - 2022 - Present [Co-organizer of the Cleveland R User Group](https://www.meetup.com/cleveland-user-group/)
+- 2023 - Present ["Data Laundry" series of live workshop examples](https://github.com/awong234/laundry-day)
