@@ -9,6 +9,17 @@ pre[class*="language-"] {
     margin-right: auto;
 }
 
-a {
+/* a {
     color: #78E2A0;
+} */
+
+:root {
+    --background: #1f222a;
+    --foreground: #78E2A0;
+    --accent: #78E2A0;
+}
+
+body {
+    color: white;
+    font-variant-ligatures: common-ligatures;
 }
