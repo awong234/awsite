@@ -5,6 +5,7 @@ theme = 'terminal'
 [params]
   themeColor = 'green'
   centerTheme = true
+  ReadMore = '%>%'
   [params.logo]
     logoText = "Alec's Alces"
 [menu]
