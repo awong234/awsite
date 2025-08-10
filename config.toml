@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://alecsalces.com/'
 languageCode = 'en-us'
 title = "Alec's Alces"
 theme = 'terminal'
@@ -37,3 +37,6 @@ theme = 'terminal'
 ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
 [markup.goldmark.renderer]
   unsafe= true
+[permalinks]
+  [permalinks.page]
+    posts = '/posts/:slug/'
