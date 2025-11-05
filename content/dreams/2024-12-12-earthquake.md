@@ -1,7 +1,7 @@
 ---
 title: Earthquake
 date: 2024-12-12
-dream_tags: [Lisa, vehicles, Robert Severson]
+dream_tags: [Lisa, vehicles, Robert Severson, food]
 ---
 
 Lisa and I were traveling. In an old building, perhaps a hotel, but the building
