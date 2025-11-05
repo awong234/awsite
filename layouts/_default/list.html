@@ -33,7 +33,7 @@
         {{ if .Params.dream_tags }}
         <span class="post-tags">
             {{ range .Params.dream_tags }}
-            #<a href="{{ (urlize (printf " tags/%s/" . )) | absLangURL }}">
+            #<a href="{{ (urlize (printf " drean_tags/%s/" . )) | absLangURL }}">
                 {{- . -}}
             </a>&nbsp;
             {{ end }}
