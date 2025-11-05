@@ -5,7 +5,7 @@ theme = 'terminal'
 [params]
   themeColor = 'green'
   centerTheme = true
-  ReadMore = '%>%'
+  ReadMore = '%>% more()'
   [params.logo]
     logoText = "Alec's Alces"
 [menu]
@@ -51,6 +51,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
   [permalinks.page]
     posts = '/posts/:slug/'
 [taxonomies]
+categories = 'categories'
 tag = 'tags'
 dream_tag = 'dream_tags'
 [permalinks.taxonomy]
