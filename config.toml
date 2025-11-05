@@ -53,7 +53,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
 [taxonomies]
 categories = 'categories'
 tag = 'tags'
-dream_tag = 'dream_tags'
+dream_tags = 'dream_tags'
 [permalinks.taxonomy]
   tags = '/tags'
   dream_tags = '/dream_tags'
