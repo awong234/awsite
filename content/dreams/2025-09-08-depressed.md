@@ -1,7 +1,7 @@
 ---
 title: Depressed
 date: 2025-09-08
-dream_tags: [Andrew, Progressive, colleagues, depressed, food]
+dream_tags: [Andrew, Progressive, colleagues, depression, food]
 ---
 
 Was playing a game with andrew and clay from work. Michael Vuong from work was

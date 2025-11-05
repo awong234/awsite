@@ -1,7 +1,7 @@
 ---
 title: Inception
 date: 2020-11-26
-dream_tags: [Lisa, animals, gruesome]
+dream_tags: [Lisa, animals, death, gruesome]
 ---
 
 I wake up from a dream to tell lisa on the couch about how I dreamt about the
