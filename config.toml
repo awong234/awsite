@@ -18,7 +18,7 @@ theme = 'terminal'
     name = "Links"
     pre = "lnk"
     url = "/links/"
-    weight = 5
+    weight = 2
   [[menu.main]]
     name = "Tags"
     pre = "tag"
@@ -34,9 +34,28 @@ theme = 'terminal'
     pre = "photography"
     url = "/photography/"
     weight = 4
+  [[menu.main]]
+    name = "Dreams"
+    pre = "dreams"
+    url = "/dreams"
+    weight = 5
+  [[menu.main]]
+    name = "Dream Tags"
+    pre = "dream_tags"
+    url = "/dream_tags"
+    weight = 6
 ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
 [markup.goldmark.renderer]
   unsafe= true
 [permalinks]
   [permalinks.page]
     posts = '/posts/:slug/'
+[taxonomies]
+tag = 'tags'
+dream_tag = 'dream_tags'
+[permalinks.taxonomy]
+  tags = '/tags'
+  dream_tags = '/dream_tags'
+[permalinks.term]
+  tags = '/tags/:slug'
+  dream_tags = '/dream_tags/:slug'
