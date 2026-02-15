@@ -107,8 +107,8 @@ ability to get the ordering right:
 Did you have to do math to get this result? Did you do anything particularly
 complex? Not really. It's almost instinctual at this point. Long ago (or maybe
 not long ago, I don't know you) you were taught the rules of our numbering
-system, internalized them, and **understand** how map language to numbers in a
-way that you can apply those rules to the language. But if all you knew was
+system, internalized them, and now **understand** how map language to numbers in
+a way that you can apply those rules to the language. But if all you knew was
 English and you were never taught about numbers, if you weren't taught these
 rules, there is no obvious way to order these words.
 
@@ -129,30 +129,30 @@ make_prompt(n = input$n, words_joined = input$literals_joined)
 
     The list is 20 numbers long. Here is the list:
 
-    fifty-six thousand, five hundred ninety-five point three eight four six three two two three seven three
-    sixty-two thousand, eight hundred seven point four one four seven nine seven one three four seven
-    thirty-nine thousand, two hundred fifty-six point three eight six five two eight seven two two nine
-    thirty-two thousand, one hundred fifty-one point seven four one zero six eight eight one zero two
-    seventy-six thousand, nine hundred fifty-five point one two five zero six one seven nine five one
-    fifteen thousand, four hundred thirty-two point one nine three two six nine nine five three one
-    twenty-one thousand, four hundred six point zero three four five four three one seven nine
-    seventy-three thousand, one hundred four point three two eight four seven five eight nine two five
-    sixteen thousand, seven hundred ninety point eight five three nine five two nine eight nine
-    ninety-four thousand, two hundred seventy-three point nine seven seven three zero seven six zero two eight
-    sixty-eight thousand, one hundred twenty-eight point four five eight five zero three six three three seven
-    forty thousand, four hundred twenty-seven point eight one five four nine five zero five eight nine
-    thirty-nine thousand, eight hundred seventy-five point one zero eight seven four eight six seven four four
-    seventy-two thousand, seven hundred eighty-two point zero five three zero seven six six six two one
-    one thousand, four hundred ninety-two point seven one four nine zero five one eight zero zero four
-    sixty-two thousand, six hundred twenty-eight point two one one seven seven nine five one nine nine
-    ninety-five thousand, nine hundred sixty-four point eight five nine three three two eight eight nine three
-    eighty-one thousand, eight hundred thirty point six three eight six two three seven nine six four
-    eighty thousand, five hundred five point nine six nine two eight two two three nine seven
-    eighty-two thousand, two hundred five point five six one one zero six zero nine three two
+    eleven thousand, nine hundred fifty-nine point zero two seven four two nine one one one three
+    seventy thousand, one hundred seventy-three point four nine eight seven seven eight six zero four
+    twenty thousand, thirty-four point zero two six three zero seven nine eight five two
+    forty-three thousand, five hundred eleven point two zero two four six five seven four two eight
+    seventy-two thousand, seven hundred twenty-four point seven nine six nine two four seven four zero one
+    fifty-seven thousand, six hundred eighty-eight point eight eight three five nine eight eight nine three nine
+    twenty-two thousand, six hundred ten point six six zero six four two three eight five five
+    twenty-four thousand, nine hundred twenty-seven point eight nine two six zero five seven seven four one
+    seventy-one thousand, three hundred sixty-nine point three eight nine five three seven seven two one nine
+    forty-seven thousand, two hundred ninety-five point one five one six seven four one eight eight seven
+    sixty-eight thousand, five hundred forty-four point five four six zero nine five six five four four
+    seventy-nine thousand, eight hundred fifty-seven point five two four eight five six nine two five
+    thirty-five thousand, two hundred ninety point zero four six two six nine zero seven four one
+    seventy-eight thousand, three hundred thirteen point nine seven six eight nine eight seven eight nine four
+    sixty-four thousand, four hundred twenty-four point two five seven six five five six two eight
+    one thousand, four hundred sixty-two point seven two one zero five six three zero four eight seven
+    sixty-seven thousand, eight hundred twenty-nine point three nine three four zero nine one nine two six
+    four thousand, twenty-one point five four nine five five zero eight one six four two
+    fifty-two thousand, three hundred forty point two zero one six three seven seven zero seven seven
+    fifty-one thousand, three hundred eighty-nine point eight one four eight four three four two three seven
 
 These are big long numbers when represented in English, to be sure, but if LLM's
 are as good as they're touted to be that won't be an issue right? All these
-numbers are below 10,000 for goodness' sake.
+numbers are below 100,000 for goodness' sake.
 
 ## Evaluating ChatGPT 5.2
 
@@ -250,11 +250,12 @@ print(chat_output$ordering)
 
      [1] 18 15  4 11 14  3 13 20  9 17  2 19  8 16  5 12 10  1  7  6
 
-So it got close. But the thing is I don't expect it to get close, I expect it to
-be *correct*. This is about as trivial a problem I can come up with that touches
-on the ability (nay, strength) of an LLM (mapping language to abstract concepts)
-and a problem that requires *understanding* of something very fundamental to get
-correct. A problem that you or I -- provided enough time -- would not err.
+So it got close. But the thing is I don't expect it to get close, if I'm to
+believe LLM's can truly reason about a problem I expect it to be *correct*. This
+is about as trivial a problem I can come up with that touches on the ability
+(nay, strength) of an LLM (mapping language to abstract concepts) and a problem
+that requires *understanding* of something very fundamental to get correct. A
+problem that you or I -- provided enough time -- would get correct.
 
 But this was one example, maybe it was a fluke -- we need to see this in action
 more times to assess the statistical properties of the correctness of the
@@ -311,7 +312,7 @@ evaluations we saw above:
     -   We see 1, so that is 100% of the time. Good job there! It didn't create any rank lists that are longer or shorter than they should be.
 -   `p_any_missing_indices`: What proportion of the time did it just not include an index? (remember the rank order should always contain every number from 1 to 20)
     -   Here we see that it forgot this fact about 40% of the time! That implies on those occasions, it duplicated indices or exceeded the max rank index.
--   `p_any_fabricated_indices`: Did it make any indices up that should not be in the set of {1, 20}?
+-   `p_any_fabricated_indices`: Did it make any integer indices up that are not in the range \[1,20\]?
     -   Here we see that it fabricated indices 24% of the time!
 -   `p_exceeded_max_index`: This is functionally similar to p_any_fabricated_indices, but limits our notice to the proportion of the replicates it gave a number greater than the maximum possible: 20.
     -   We see the numbers is 0%; alongside the last category, this tells us that the indices it fabricated were 0's.
