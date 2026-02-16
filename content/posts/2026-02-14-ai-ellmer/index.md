@@ -129,26 +129,26 @@ make_prompt(n = input$n, words_joined = input$literals_joined)
 
     The list is 20 numbers long. Here is the list:
 
-    eleven thousand, nine hundred fifty-nine point zero two seven four two nine one one one three
-    seventy thousand, one hundred seventy-three point four nine eight seven seven eight six zero four
-    twenty thousand, thirty-four point zero two six three zero seven nine eight five two
-    forty-three thousand, five hundred eleven point two zero two four six five seven four two eight
-    seventy-two thousand, seven hundred twenty-four point seven nine six nine two four seven four zero one
-    fifty-seven thousand, six hundred eighty-eight point eight eight three five nine eight eight nine three nine
-    twenty-two thousand, six hundred ten point six six zero six four two three eight five five
-    twenty-four thousand, nine hundred twenty-seven point eight nine two six zero five seven seven four one
-    seventy-one thousand, three hundred sixty-nine point three eight nine five three seven seven two one nine
-    forty-seven thousand, two hundred ninety-five point one five one six seven four one eight eight seven
-    sixty-eight thousand, five hundred forty-four point five four six zero nine five six five four four
-    seventy-nine thousand, eight hundred fifty-seven point five two four eight five six nine two five
-    thirty-five thousand, two hundred ninety point zero four six two six nine zero seven four one
-    seventy-eight thousand, three hundred thirteen point nine seven six eight nine eight seven eight nine four
-    sixty-four thousand, four hundred twenty-four point two five seven six five five six two eight
-    one thousand, four hundred sixty-two point seven two one zero five six three zero four eight seven
-    sixty-seven thousand, eight hundred twenty-nine point three nine three four zero nine one nine two six
-    four thousand, twenty-one point five four nine five five zero eight one six four two
-    fifty-two thousand, three hundred forty point two zero one six three seven seven zero seven seven
-    fifty-one thousand, three hundred eighty-nine point eight one four eight four three four two three seven
+    forty-three thousand, two hundred five point three seven nine nine five zero eight one three nine
+    nine thousand, two hundred twenty-one point five zero five three nine six nine nine nine four two
+    fourteen thousand, ninety-two point two six eight zero zero three one five zero eight
+    twenty thousand, forty-seven point six five three five five nine five nine five three
+    three thousand, six hundred fifty-five point one eight four two two three three one six six one
+    twenty thousand, three hundred ninety-four point six seven one six six one seven seven nine three
+    eighty-one thousand, eight hundred twenty-nine point eight three two three five four five six zero five
+    sixty-seven thousand, four hundred one point six four four three five four six eight six one
+    twenty thousand, one hundred eighty-nine point eight seven three one seven five six nine five five
+    thirty-four thousand, two hundred twenty-six point three four one one nine six three three five nine
+    ninety-nine thousand, five hundred forty-nine point five five one two three eight three zero five nine
+    seventy-six thousand, five hundred ninety-six point one one four one three two five five three three
+    thirty-three thousand, four hundred eight point six seven eight two nine nine seven four seven four
+    ninety-eight thousand, ninety-one point three zero six four six seven five four zero six
+    forty-nine thousand, five hundred thirty-four point zero five three four two five three zero four six
+    forty-seven thousand, four hundred fifty-three point one nine two six six eight zero three five six
+    eighty-one thousand, nine hundred twenty-six point nine six three zero three five nine four eight six
+    eighty-eight thousand, three hundred ninety-one point four zero four seven one five three six six seven
+    two thousand, six hundred forty-eight point one four two zero two six seven three seven three three
+    fifteen thousand, two hundred sixty-four point four nine nine six two nine eight four seven seven
 
 These are big long numbers when represented in English, to be sure, but if LLM's
 are as good as they're touted to be that won't be an issue right? All these
@@ -431,7 +431,11 @@ Some relevant quotes from the video:
 
 \- Yann LeCunn
 
-Here's the code I used: https://github.com/awong234/gpt-number-sorting
+Here's the code I used: https://github.com/awong234/gpt-number-sorting. I've
+saved the chat responses to the repository and so the results should be
+reproducible to the extent `m_single_response` is used (this is the function
+that loads from the cache). Make sure to run the `setup.R` script first, and
+comment out or avoid running the line that sets up the chat.
 
 In case you're curious, here's the full list of 50 replicates, their true rank
 orderings, and their GPT rank ordering.
