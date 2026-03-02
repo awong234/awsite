@@ -1,4 +1,3 @@
-
 ---
 title: Evaluating an LLM's ability to do a simple thing
 format:

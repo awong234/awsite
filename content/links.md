@@ -26,3 +26,4 @@
 - ["In the Future All Food Will Be Cooked in a Microwave, and if You Can’t Deal With That Then You Need to Get Out of the Kitchen", Colin Cornaby, August 2025](https://www.colincornaby.me/2025/08/in-the-future-all-food-will-be-cooked-in-a-microwave-and-if-you-cant-deal-with-that-then-you-need-to-get-out-of-the-kitchen/)
 - ["If it cites em dashes as proof, it came from a tool.", Scott Smitelli Jul 7, 2025](https://www.scottsmitelli.com/articles/em-dash-tool/)
 - ["AI Is Supercharging the War on Libraries, Education, and Human Knowledge", Jason Koebler, Nov 6, 2025](https://www.404media.co/ai-is-supercharging-the-war-on-libraries-education-and-human-knowledge/)
+- ["You don't have to if you don't want to", Scot Smitelli Feb 28, 2026](https://www.scottsmitelli.com/articles/you-dont-have-to/)
