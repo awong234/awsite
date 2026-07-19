@@ -2,6 +2,8 @@
 
 - ["Drowning in code: The ever-growing problem of ever-growing codebases", Liam Proven 2024](https://www.theregister.com/2024/02/12/drowning_in_code/)
 - ["JavaScript Bloat in 2024", @nikitonsky 2024](https://tonsky.me/blog/js-bloat/)
+- [E.W. Djikstra EWD 1304 "The end of Computing Science?" Nov 2000](https://www.cs.utexas.edu/~EWD/transcriptions/EWD13xx/EWD1304.html)
+- [E.W. Djikstra EWD 1305 "Answers to questions from students of Software Engineering" Nov 2000](https://www.cs.utexas.edu/~EWD/transcriptions/EWD13xx/EWD1305.html)
 
 # Statistics
 
@@ -27,3 +29,5 @@
 - ["If it cites em dashes as proof, it came from a tool.", Scott Smitelli Jul 7, 2025](https://www.scottsmitelli.com/articles/em-dash-tool/)
 - ["AI Is Supercharging the War on Libraries, Education, and Human Knowledge", Jason Koebler, Nov 6, 2025](https://www.404media.co/ai-is-supercharging-the-war-on-libraries-education-and-human-knowledge/)
 - ["You don't have to if you don't want to", Scot Smitelli Feb 28, 2026](https://www.scottsmitelli.com/articles/you-dont-have-to/)
+- ["AI Isn't Replacing SREs. It's Deskilling Them." Elizabeth *Signoz* Feb 28, 2026](https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling)
+- ["On the foolishness of "natural language programming" 1978 prof.dr.Edsger W.Dijkstra, Burroughs Research Fellow](https://www.cs.utexas.edu/%7EEWD/transcriptions/EWD06xx/EWD667.html)
