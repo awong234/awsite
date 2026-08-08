@@ -31,3 +31,4 @@
 - ["You don't have to if you don't want to", Scot Smitelli Feb 28, 2026](https://www.scottsmitelli.com/articles/you-dont-have-to/)
 - ["AI Isn't Replacing SREs. It's Deskilling Them." Elizabeth *Signoz* Feb 28, 2026](https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling)
 - ["On the foolishness of "natural language programming" 1978 prof.dr.Edsger W.Dijkstra, Burroughs Research Fellow](https://www.cs.utexas.edu/%7EEWD/transcriptions/EWD06xx/EWD667.html)
+- ["Plato’s Warning Has Been Vindicated Why AI Has Brought Nothing More than the Conceit of Wisdom", Michael Marinaccio, August 2026](https://hedgehogreview.com/web-features/thr/posts/platos-warning-has-been-vindicated)
