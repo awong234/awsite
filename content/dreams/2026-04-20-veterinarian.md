@@ -1,7 +1,7 @@
 ---
 title: Veterinarian
 date: 2026-04-20
-dream_tags: [animals, coworkers]
+dream_tags: [animals, colleagues]
 ---
 
 Working at a vet office, I think.
