@@ -49,7 +49,7 @@ ignoreFiles = [ "\\.qmd$", "\\.ipynb$", "\\.py$" ]
   unsafe= true
 [permalinks]
   [permalinks.page]
-    posts = '/posts/:slug/'
+    posts = '/posts/:year/:month/:slug/'
 [taxonomies]
 categories = 'categories'
 tag = 'tags'
