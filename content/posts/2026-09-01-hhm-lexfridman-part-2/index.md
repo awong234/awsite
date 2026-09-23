@@ -67,16 +67,16 @@ there’s gonna be more demand for it.
 The [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox) is not a
 simple restating of supply and demand. It is not a paradox to observe that
 demand might increase when prices fall; that much should be pretty obvious to
-anyone having taken economics 101.
+anyone having taken economics 101, and I just took *Ag Econ*.
 
-The paradox is that increasing _efficiency_ of systems do not tend to reduce
+The paradox is that increasing _efficiency_ of systems does not tend to reduce
 their overall consumption. It is originally and primarily cast in relation to
 energy use and speaks to another problem in our future -- that of climate change
--- and what the Jevons paradox *actually* predicts is that without the proper
+-- and what the Jevons paradox *actually* predicts is that without proper
 incentives, all the renewable energy in the world _will not_ undercut our total
 emissions, deforestation, consumption of resources, etc; they will only serve to
 fuel _more_ consumption. There will be no "green" AI if the Jevons paradox holds
-true.
+true on energy.
 
 This is the real implication of the Jevons paradox that AI optimists blithely
 paper over. AI won't solve climate change because we already have a solution:
