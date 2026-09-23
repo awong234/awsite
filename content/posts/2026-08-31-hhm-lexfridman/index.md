@@ -102,7 +102,8 @@ things that other people can appreciate and insodoing consolidate more capital.
 Even if they themselves didn't actually do the work to get it, it's assumed that
 even in the absence of AI they could have done it, because they did it before.
 With the speed of agentic engineering they can produce great things attributed
-directly to them. No wrong statements here.
+directly to them. I have no disagreement here, despite the way this paragraph
+reads.
 
 But I think a lack of empathy is exhibited towards the next generation, one that
 can no longer gather merit because the spectre of AI will always loom -- did you

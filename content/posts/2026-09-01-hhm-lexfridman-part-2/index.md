@@ -89,13 +89,13 @@ Tragedy is convenient externalization of negative effects, the pollution of
 common areas because containment is too expensive.
 
 But it is even when things are cheap -- not even free, just cheap -- that people
-begin to over-use resources for increasingly less productive means. Making
-access to resources cheaper and easier creates waste. It is _wasteful_ for me to
-leave the light on in my basement all night, but we have a cat with eye damage
-so I do it because LEDs let me do it cheaply. It is a _tragic waste_ to have
-disposable _super-computers_ that we call smartphones -- many times the compute
-needed to get us to the moon that first time -- with which we do _nothing of
-note_ except dick around on social media.
+begin to over-use resources for increasingly less productive ends. Making access
+to resources cheaper and easier creates waste. It is _wasteful_ for me to leave
+the light on in my basement all night, but we have a cat with eye damage so I do
+it because LEDs let me do it cheaply. It is a _tragic waste_ to have disposable
+_super-computers_ that we call smartphones -- many times the compute needed to
+get us to the moon that first time -- with which we do _nothing of note_ except
+dick around on social media.
 
 Last month I misplaced my water bottle and had to use a plastic Smart Water
 bottle during my workouts instead. I thought that if a person in the 17th
